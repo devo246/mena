@@ -219,7 +219,7 @@ header .home div p {
 }
 
 #about .aboutContent img {
-    width: 45%;
+    width: 50%;
     min-width: 290px;
 }
 
@@ -323,5 +323,6 @@ footer .connect a:hover {
 footer .connect p {
     padding-top: 15px;
 }
+
 
 /* footer end */
