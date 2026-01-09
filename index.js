@@ -49,23 +49,23 @@ window.addEventListener("scroll", () => {
 
 let services = {
     service1: {
-        image: "/Images/charger.webp",
+        image: "Images/charger.webp",
         title: "تقفيل شواحن السيارات الكهربائية"
     },
     service2: {
-        image: "/Images/copical.webp",
+        image: "Images/copical.webp",
         title: "سحب وتقفيل كوبيكال (ستلايت - كاميرات - انترنت - انتركم)"
     },
     service3: {
-        image: "/Images/interfacee.webp",
+        image: "Images/interfacee.webp",
         title: "تقفيل الواجهات"
     },
     service4: {
-        image: "/Images/profileled.webp",
+        image: "Images/profileled.webp",
         title: "جميع اعمال البروفايل ليد والمخفي"
     },
     service5: {
-        image: "/Images/ladder.webp",
+        image: "Images/ladder.webp",
         title: "جميع اعمال اضاءة الدرج"
     },
 }
@@ -103,3 +103,4 @@ function content() {
 
 // استدعاء الدالة
 content()
+
