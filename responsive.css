@@ -1,0 +1,84 @@
+/* Small screen (mobile) */
+@media (max-width: 580px) {
+    #about .aboutContent p {
+        order: 2;
+    }
+
+    footer .connect {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .connect a {
+        padding-left: 0;
+    }
+
+    .home .connectBtn {
+        width: 7.5em;
+        height: 2.6em;
+        line-height: 2.5em;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    header nav ul {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #213a72;
+        padding-right: 15px;
+        height: 100vh;
+        text-align: center;
+    }
+
+    #burger-checkbox:checked~ul {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .burger {
+        display: block !important;
+    }
+
+    header .home div h1 {
+        font-size: 2.4rem;
+    }
+
+    header .home div p {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #carouselExampleControls .carousel-item img {
+        aspect-ratio: 2 / 1.5;
+    }
+}
+
+/* Medium screen (tablets) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large screen (labtop) */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* X-Large screen (computer) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

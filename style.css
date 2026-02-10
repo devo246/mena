@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none;
+    border: none;
+    outline: none;
+    transition: all .2s linear;
+    font-family: "Beiruti", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 60px;
+}
+
+h1, h2, h3 {
+    font-family: "Readex Pro", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 35px;
+}
+
+/* Header */
+header {
+    height: 100vh;
+}
+
+header nav {
+    padding: 12px 0;
+    background-color: #213a72;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.logo img {
+    display: block;
+    width: 90px;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img:active {
+    scale: .9;
+}
+
+header nav div ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+header nav div ul li a {
+    font-size: 20px;
+    color: white;
+}
+
+header nav div ul li a:hover {
+    color: #fd7422 !important;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link.active {
+    color: #fd7422;
+}
+
+/* From Uiverse.io by ahmedyasserdev */
+.burger {
+    display: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin: 6px 0;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        opacity 0.3s ease;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+#burger-checkbox:checked+.burger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#burger-checkbox:checked+.burger span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#burger-checkbox:checked+.burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* section home */
+
+header .home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background: url("Images/bg.jpg") no-repeat 100% 100% / cover;
+    aspect-ratio: 16 / 9;
+}
+
+header .home div {
+    padding-top: 30px;
+}
+
+header .home div h1 {
+    font-size: 3.5rem;
+}
+
+header .home div p {
+    font-size: 2.5rem;
+    padding: 15px 0 25px 0;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.connectBtn {
+    --color: #fd7422;
+    text-align: center;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 19px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: rgb(240, 240, 240);
+}
+
+.connectBtn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.connectBtn:hover {
+    color: #fff;
+}
+
+.connectBtn:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.connectBtn:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.connectBtn:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+.btn1  {
+    --color: #57b302;
+    margin-left: 5px;
+}
+
+/* About start */
+#about .aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#about .aboutContent img {
+    width: 50%;
+    min-width: 290px;
+}
+
+#about .aboutContent p {
+    width: 45%;
+    min-width: 290px;
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#about .aboutContent p span {
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+}
+
+/* About end */
+
+/* Services start */
+#services {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+}
+
+#servicesContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 15px;
+}
+
+#servicesContent div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 20px 10px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+
+#servicesContent div img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+#servicesContent div p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.3rem;
+}
+
+.carousel {
+    margin: 30px auto;
+}
+
+.carousel p {
+    font-size: 30px;
+}
+
+#carouselExampleControls {
+    margin: 0;
+    width: 100%;
+}
+
+#carouselExampleControls .carousel-item img {
+    aspect-ratio: 2 / 1;
+}
+
+/* Services end */
+
+/* footer start */
+footer {
+    background-color: #213a72;
+    padding: 60px 0 30px 0;
+    color: white;
+}
+
+footer .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container p {
+    font-size: 1.2rem;
+}
+
+footer .connect a {
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+footer .connect a:hover {
+    color: #fd7422;
+}
+
+footer .connect p {
+    padding-top: 15px;
+}
+
+/* footer end */
